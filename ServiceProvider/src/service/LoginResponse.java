@@ -1,12 +1,14 @@
 package service;
 
-public class RegisterRequest {
+public class LoginResponse {
 
 	private String salt_masterkey;
-	
+
 	private String pubkey;
-	
+
 	private String privkey_enc;
+	
+
 	
 	public String getSalt_masterkey() {
 		return salt_masterkey;

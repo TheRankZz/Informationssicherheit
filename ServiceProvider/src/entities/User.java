@@ -1,14 +1,19 @@
 package entities;
 
+import java.util.List;
+
 public class User {
 	
-	private String identity;
+	private String username;
 
 	private String salt_masterkey;
 	
 	private String pubkey;
 	
 	private String privkey_enc;
+	
+	private List<Message> messages;
+	
 	
 	public String getSalt_masterkey() {
 		return salt_masterkey;
@@ -34,12 +39,20 @@ public class User {
 		this.privkey_enc = privkey_enc;
 	}
 
-	public String getIdentity() {
-		return identity;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setIdentity(String identity) {
-		this.identity = identity;
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public List<Message> getMessages() {
+		return messages;
+	}
+
+	public void setMessages(List<Message> messages) {
+		this.messages = messages;
 	}
 
 	
